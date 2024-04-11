@@ -2,7 +2,7 @@ public class Knyga {
     private String pavadinimas;
     private String autorius;
     private String leidimoMetai;
-    private static String skaitytojoID;
+    private String skaitytojoID;
 
     public Knyga(String pavadinimas, String autorius, String leidimoMetai) {
         this.pavadinimas = pavadinimas;
@@ -25,8 +25,8 @@ public class Knyga {
         this.leidimoMetai = leidimoMetai;
     }
 
-    public static void setSkaitytojoID(String skaitytojoID) {
-        Knyga.skaitytojoID = skaitytojoID;
+    public void setSkaitytojoID(String skaitytojoID) {
+        this.skaitytojoID = skaitytojoID;
     }
 
     public String getPavadinimas() {
@@ -41,7 +41,7 @@ public class Knyga {
         return leidimoMetai;
     }
 
-    public static String getSkaitytojoID() {
+    public  String getSkaitytojoID() {
         return skaitytojoID;
     }
 }

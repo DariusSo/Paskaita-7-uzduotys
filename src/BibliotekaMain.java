@@ -24,11 +24,7 @@ public class BibliotekaMain {
             biblioteka.pridetiKnyga(romanas);
 
         }else{
-            System.out.println("Kokia knyga noretumete pasiimti?");
-            String kPavadinimas = scanner.nextLine();
-            biblioteka.pasiimtiKnyga(kPavadinimas);
-
-
+            biblioteka.pasiimtiKnyga();
         }
         for (Knyga k : biblioteka.knyguSarasas){
             System.out.println(biblioteka.knygosInfo(k));
